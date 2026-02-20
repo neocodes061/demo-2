@@ -36,6 +36,11 @@ section#home {
     background-color: var(--white);
 }
 
+section#stats {
+    background-color: var(--primary) !important;
+    padding: 40px 0 !important;
+}
+
 .section-header {
     text-align: center;
     margin-bottom: var(--spacing-xl);
