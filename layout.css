@@ -32,8 +32,7 @@ section:nth-child(even) {
     background-color: var(--primary-light);
 }
 
-section#home,
-section#stats {
+section#home {
     background-color: var(--white);
 }
 
