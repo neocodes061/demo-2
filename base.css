@@ -1,13 +1,23 @@
 /* Color Palette & Variables */
 :root {
     --primary: #0056b3;
+    --primary-light: #f0f4ff;
     --secondary: #28a745;
     --dark: #1a1a1a;
     --light: #f8f9fa;
+    --accent: #ff6b35;
     --text: #444;
+    --text-light: #666;
     --white: #ffffff;
     --shadow: 0 4px 15px rgba(0,0,0,0.08);
+    --shadow-lg: 0 8px 25px rgba(0,0,0,0.12);
     --radius: 8px;
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 40px;
+    --spacing-xl: 60px;
+    --spacing-xxl: 80px;
 }
 
 /* Reset */
@@ -28,11 +38,17 @@ body {
     background-color: var(--white);
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
     color: var(--dark);
     line-height: 1.2;
+    margin-bottom: var(--spacing-md);
 }
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.2rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.3rem; }
 
 img {
     max-width: 100%;
