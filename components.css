@@ -344,29 +344,37 @@
         left: 0;
         width: 100%;
         background: var(--white);
+        display: flex;
         flex-direction: column;
         gap: 0;
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s ease;
+        transition: max-height 0.4s ease;
         box-shadow: var(--shadow);
         padding: 0;
         list-style: none;
+        z-index: 999;
     }
     
     .nav-links.active {
-        max-height: 400px;
-        padding: var(--spacing-lg) 0;
+        max-height: 500px;
+        padding: var(--spacing-md) 0;
     }
     
     .nav-links li {
         border-bottom: 1px solid #f0f0f0;
+        padding: 0;
+    }
+    
+    .nav-links li:last-child {
+        border-bottom: none;
     }
     
     .nav-links a {
         display: block;
         padding: var(--spacing-md) var(--spacing-lg);
         color: var(--dark);
+        font-weight: 500;
     }
     
     .nav-links a:hover {
