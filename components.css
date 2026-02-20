@@ -30,6 +30,10 @@
     gap: 30px;
 }
 
+.nav-links li {
+    list-style: none;
+}
+
 .nav-links a {
     color: var(--dark);
     font-weight: 500;
@@ -344,26 +348,23 @@
         left: 0;
         width: 100%;
         background: var(--white);
-        display: flex;
         flex-direction: column;
         gap: 0;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.4s ease;
+        display: none;
+        transition: all 0.4s ease;
         box-shadow: var(--shadow);
-        padding: 0;
-        list-style: none;
         z-index: 999;
     }
     
     .nav-links.active {
-        max-height: 500px;
+        display: flex;
         padding: var(--spacing-md) 0;
     }
     
     .nav-links li {
         border-bottom: 1px solid #f0f0f0;
         padding: 0;
+        margin: 0;
     }
     
     .nav-links li:last-child {
@@ -375,6 +376,7 @@
         padding: var(--spacing-md) var(--spacing-lg);
         color: var(--dark);
         font-weight: 500;
+        width: 100%;
     }
     
     .nav-links a:hover {
